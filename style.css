@@ -37,6 +37,7 @@
 
 section.presentation-form {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .main-description {
@@ -61,11 +62,41 @@ section.presentation-form {
     font-weight: 800;
     background-color: var(--yellow-color);
     transition: background-color 200ms ease-out 0s;
-    border: 1px solid #f1c40f;
+    border: none;
     cursor: pointer;
 }
 
 #submit:hover {
     background-color: blue;
     color: white;
+}
+
+.perks-wrap {
+    padding: 30px 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+.perk-images {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-right: 50px;
+}
+
+.feature-h2 {
+    font-size: 24px;
+}
+
+.feature-p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.feature-wrap {
+    display: flex;
+    margin-bottom: 20px;
 }
