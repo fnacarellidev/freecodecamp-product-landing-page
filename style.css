@@ -1,5 +1,12 @@
+:root {
+    --yellow-color: #f1c40f;
+}
+
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 #header {
@@ -8,6 +15,7 @@
     justify-content: space-between;
     background-color: beige;
     height: 80px;
+    margin-bottom: 20px;
 }
 
 #header-img {
@@ -21,7 +29,43 @@
 }
 
 .nav-link {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 400;
     color: #000000;
     text-decoration: none;
+}
+
+section.presentation-form {
+    text-align: center;
+}
+
+.main-description {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#email {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+#submit {
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 150px;
+    height: 30px;
+    font-weight: 800;
+    background-color: var(--yellow-color);
+    transition: background-color 200ms ease-out 0s;
+    border: 1px solid #f1c40f;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: blue;
+    color: white;
 }
