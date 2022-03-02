@@ -100,3 +100,14 @@ section.presentation-form {
     display: flex;
     margin-bottom: 20px;
 }
+
+.video-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.video-wrap > iframe {
+    max-width: 560px;
+    width: 100%;
+}
