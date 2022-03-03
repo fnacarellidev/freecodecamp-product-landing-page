@@ -11,13 +11,16 @@
 
 #header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
     background-color: beige;
     height: 80px;
     margin-bottom: 20px;
     padding: 20px 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
 }
 
 #header-img {
@@ -158,4 +161,57 @@ section.presentation-form {
     background-color: var(--yellow-color);
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 890px)
+{
+    #header {
+        display: block;
+        position: static;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .img-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav-bar {
+        display: block;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        float: none;
+        background-color: beige;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .perk-images {
+        display: none;
+    }
+
+    .feature-h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature-p {
+        text-align: center;
+    }
+
+    .price-table-wrap {
+        display: block;
+    }
+
+    .plan {
+        width: 50vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 }
